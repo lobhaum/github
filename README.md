@@ -24,4 +24,15 @@ _***depois usar o git checkout _<arquivo>_ para voltar ele para edição anterio
 *git reset --mixed* -> (+)soft e volta as alterações do arquivo
 *git reset --hard* -> (+)mixed e mata o commit
 _**git reset --hard altera o histórico do commit**_
+## Gerando SSH
+Abra o terminal, cole o texto abaixo e substitua por seu email:
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+Será criado uma nava chave ssh
+Será pedido se deseja alterar endereço de onde a chave será salva, normalmente mantem o padrão
+Depois será pedido uma frase "secreta" e normalmente se deixar sem frase e pressiona enter
+Será salvao em ~/.ssh e o arquivo é id_rsa.pub
+cat id_rsa.pubdo
+Vá agora em Settings->SSH and GPG keys
+New SSH Key
+Cole o conteudo, identifique sua chave, salve digite a senha.
 
