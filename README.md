@@ -35,4 +35,24 @@ cat id_rsa.pubdo
 Vá agora em Settings->SSH and GPG keys
 New SSH Key
 Cole o conteudo, identifique sua chave, salve digite a senha.
+##create a new repository on the command line (ssh)##
+echo "# github" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin git@github.com:<usuario>/<repositorio>.git
+git push -u origin master
+##push an existing repository from the command line (ssh)##
+git remote add origin git@github.com:<usuario>/<repositorio>.git
+git push -u origin master
+
+### Criando repositório manualmente i(https)###
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/<usuario>/<repositorio>.git
+git push -u origin master
+###push an existing repository from the command line (https)###
+git remote add origin https://github.com/<usuario>/<repositorio>.git
+git push -u origin master
 
