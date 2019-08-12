@@ -58,11 +58,27 @@ git push -u origin master
 *git fork* -> (+)clone e permite pull/requesties  
 *branch* -> é um ponteiro móvel que leva o commit  
 ___**pode modificar os arquivos sem alterar o local principal(master)  
-facilmente desligável  
+facilmente desligável   
 multiplas pessoas trabalhando em diferentes branchies  
 evita conflitos de alterações**___  
 *git checkout -b (nome)* -> o *-b* cria novo branch  
 *git branch* -> mostra os branchies existentes  
 *git checkout (nome do branch)* -> altera o branch atual para o desejado  
 *git branch -D (nome do branch)* -> *-D* deleta o branch  
+*git merge* -> operação não destrutiva, cira um novo commit com a junção de tudo  
+*git rebase* -> evita commits extras; histórico linear  
+*.gitignore* -> não trackeia alguns arquivs e pastas  
+***Ver [github/gitignore](https://github.com/gitignore)***  
+*git stash* -> gera uma imagem sem commit, util para trabalhos em execução
+*alias* -> cria atalhos/apelidos para comandos git  
+**git config --global alias.s status**  
+*Versoes:*  
+*git tag -a 1.0.0 -m "Conteudo da versão dos arquivos contidos"*  
+*git push origin master --tags* -> ficam salvas como releases  
+*git tag* -> mostra as tags  
+*git revert (hash)* -> reverte o commit; apaga o que tinha feito; não perde o histórico do que foi feito, diferente do *reset --hard*  
+*git tag -d (numero do tag)* -> apaga o tag local  
+*git push origin:(numero)* -> apaga o tag remoto // serve para branch também  
+
+
 
