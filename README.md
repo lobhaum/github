@@ -54,4 +54,15 @@ git push -u origin master
 ### push an existing repository from the command line (https)  
 git remote add origin https://github.com/<usuario>/<repositorio>.git  
 git push -u origin master  
+*git clone* -> clona o repositório, não aceita pull/requesties  
+*git fork* -> (+)clone e permite pull/requesties  
+*branch* -> é um ponteiro móvel que leva o commit  
+___**pode modificar os arquivos sem alterar o local principal(master)  
+facilmente desligável  
+multiplas pessoas trabalhando em diferentes branchies  
+evita conflitos de alterações**___  
+*git checkout -b <nome>* -> o *-b* cria novo branch  
+*git branch* -> mostra os branchies existentes  
+*git checkout <nome do branch>* -> altera o branch atual para o desejado  
+*git branch -D <nome do branch>* -> *-D* deleta o branch  
 
